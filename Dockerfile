@@ -12,7 +12,8 @@ RUN apk --update --no-cache add \
     g++ \
     make \
     musl-dev \
-    libffi-dev
+    libffi-dev \
+    zlib-dev
 COPY Gemfile /build/
 COPY package.json /build/
 COPY bin/setup /build/bin/setup
